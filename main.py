@@ -201,10 +201,10 @@ def main():
     parser.add_argument('--mode', type=str, default='closed_loop',
                        choices=['preprocess', 'topic_modeling', 'evaluation', 'closed_loop'],
                        help='运行模式')
-    parser.add_argument('--api_type', type=str, default='openai',
-                       choices=['openai', 'huggingface', 'local'],
+    parser.add_argument('--api_type', type=str, default='llama3',
+                       choices=['openai', 'huggingface', 'local', 'llama3'],
                        help='API类型')
-    parser.add_argument('--model_name', type=str, default='gpt-3.5-turbo',
+    parser.add_argument('--model_name', type=str, default='meta-llama/Meta-Llama-3-8B-Instruct',
                        help='模型名称')
     parser.add_argument('--num_topics', type=int, default=8,
                        help='话题数量')

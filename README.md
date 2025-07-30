@@ -58,7 +58,36 @@ venv\Scripts\activate  # Windows
 pip install -r requirements.txt
 ```
 
-### 2. 配置API密钥
+### 2. 使用Llama 3开源模型（推荐）
+
+如果你想要完全免费的开源解决方案，我们提供了基于Meta Llama 3的版本：
+
+#### 方法一：本地运行
+```bash
+python llama3_topic_modeling.py
+```
+
+#### 方法二：Colab运行（推荐）
+```python
+# 在Colab中运行
+!git clone https://github.com/yiyangliu3218/LLM_TP.git
+%cd LLM_TP
+!pip install -r requirements.txt
+!pip install transformers torch accelerate bitsandbytes sentence-transformers scikit-learn matplotlib seaborn wordcloud
+
+# 上传数据后运行
+!python colab_main.py --mode llama3 --num_topics 8 --sample_size 500
+```
+
+**Llama 3优势：**
+- ✅ 完全免费，无需API密钥
+- ✅ 开源模型，数据安全
+- ✅ 高性能，支持多语言
+- ✅ 本地处理，隐私保护
+
+详细使用指南请查看：[COLAB_USAGE_EXAMPLES.md](COLAB_USAGE_EXAMPLES.md)
+
+### 3. 配置API密钥（可选）
 
 ```bash
 # 设置环境变量
@@ -70,7 +99,7 @@ echo "OPENAI_API_KEY=your-openai-api-key" > .env
 echo "HUGGINGFACE_API_KEY=your-huggingface-api-key" >> .env
 ```
 
-### 3. 运行系统
+### 4. 运行系统
 
 #### 方式一：Web界面（推荐）
 
