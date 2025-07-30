@@ -122,7 +122,7 @@ logs/
 *.jsonl
 !config.json
 !colab_config.json
-!data/input/dataset.jsonl.gz
+!mydata.jsonl.gz
 
 # Submodules (will be cloned separately)
 geval/
