@@ -1,6 +1,13 @@
 # 🎯 基于LLM的自动话题建模+评估+闭环优化系统
 
+[![GitHub stars](https://img.shields.io/github/stars/yiyangliu3218/LLM_TP)](https://github.com/yiyangliu3218/LLM_TP/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/yiyangliu3218/LLM_TP)](https://github.com/yiyangliu3218/LLM_TP/network)
+[![GitHub issues](https://img.shields.io/github/issues/yiyangliu3218/LLM_TP)](https://github.com/yiyangliu3218/LLM_TP/issues)
+[![GitHub license](https://img.shields.io/github/license/yiyangliu3218/LLM_TP)](https://github.com/yiyangliu3218/LLM_TP/blob/main/LICENSE)
+
 一个集成了TopicGPT和G-Eval的完整话题建模系统，提供智能话题发现、质量评估和自动优化功能。
+
+🌐 **GitHub仓库**: https://github.com/yiyangliu3218/LLM_TP
 
 ## 🌟 功能特点
 
@@ -31,8 +38,15 @@
 
 ```bash
 # 克隆项目
-git clone <your-repo-url>
+git clone https://github.com/yiyangliu3218/LLM_TP.git
 cd LLM_TP
+
+# 或者使用一键安装脚本
+# Linux/Mac:
+chmod +x setup.sh && ./setup.sh
+
+# Windows:
+setup.bat
 
 # 创建虚拟环境
 python -m venv venv
