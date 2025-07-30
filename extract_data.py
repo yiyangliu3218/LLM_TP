@@ -45,7 +45,7 @@ def verify_jsonl_file(file_path):
 
 def main():
     parser = argparse.ArgumentParser(description='数据解压缩工具')
-    parser.add_argument('--input', type=str, default='data/input/dataset.jsonl.gz',
+    parser.add_argument('--input', type=str, default='data/input/mydata.jsonl.gz',
                        help='压缩文件路径')
     parser.add_argument('--output', type=str, default=None,
                        help='输出文件路径（可选）')
