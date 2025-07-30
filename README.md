@@ -64,6 +64,10 @@ pip install -r requirements.txt
 
 #### 方法一：本地运行
 ```bash
+# 解压数据文件
+python extract_data.py
+
+# 运行话题建模
 python llama3_topic_modeling.py
 ```
 
@@ -72,10 +76,15 @@ python llama3_topic_modeling.py
 # 在Colab中运行
 !git clone https://github.com/yiyangliu3218/LLM_TP.git
 %cd LLM_TP
+
+# 解压数据文件
+!python extract_data.py
+
+# 安装依赖
 !pip install -r requirements.txt
 !pip install transformers torch accelerate bitsandbytes sentence-transformers scikit-learn matplotlib seaborn wordcloud
 
-# 上传数据后运行
+# 运行话题建模
 !python colab_main.py --mode llama3 --num_topics 8 --sample_size 500
 ```
 
