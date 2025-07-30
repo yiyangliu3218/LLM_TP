@@ -1,0 +1,12 @@
+!pip install sentence-transformers
+!pip install transformers
+!pip install torch
+!pip install scikit-learn
+!pip install numpy
+!pip install pandas
+!pip install matplotlib
+!pip install seaborn
+!pip install plotly
+!pip install umap-learn
+!pip install hdbscan
+!pip install wordcloud

@@ -1,0 +1,34 @@
+{
+  "total_rows": 60127,
+  "total_columns": 8,
+  "columns": [
+    "Post ID",
+    "Post description",
+    "Date",
+    "Language",
+    "Translated Post Description",
+    "Sentiment",
+    "Hate",
+    "Stress or Anxiety"
+  ],
+  "data_types": {
+    "Post ID": "object",
+    "Post description": "object",
+    "Date": "object",
+    "Language": "object",
+    "Translated Post Description": "object",
+    "Sentiment": "object",
+    "Hate": "object",
+    "Stress or Anxiety": "object"
+  },
+  "missing_values": {
+    "Post ID": 0,
+    "Post description": 0,
+    "Date": 0,
+    "Language": 0,
+    "Translated Post Description": 0,
+    "Sentiment": 0,
+    "Hate": 0,
+    "Stress or Anxiety": 0
+  }
+}

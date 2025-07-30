@@ -1,0 +1,30 @@
+{
+  "api_type": "huggingface",
+  "model_name": "microsoft/DialoGPT-medium",
+  "num_topics": 8,
+  "max_iterations": 3,
+  "sample_size": 500,
+  "temperature": 0.7,
+  "max_tokens": 1000,
+  "optimization_threshold": 3.0,
+  "evaluation_aspects": [
+    "coherence",
+    "consistency",
+    "fluency",
+    "relevance",
+    "diversity"
+  ],
+  "huggingface_config": {
+    "api_key": null,
+    "model_name": "microsoft/DialoGPT-medium",
+    "use_local": true
+  },
+  "openai_config": {
+    "api_key": null,
+    "model_name": "gpt-3.5-turbo"
+  },
+  "local_config": {
+    "model_path": "./models",
+    "device": "cpu"
+  }
+} 
